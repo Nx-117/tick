@@ -101,4 +101,26 @@ public class RedisController {
         return data;
     }
 
+
+
+
+    /**
+     * 根据key值获取参数
+     * @return
+     */
+    @GetMapping("getData")
+    public Object getData(@RequestBody String key){
+
+        ReturnData data = new ReturnData();
+        data.setMessage("查询成功！");
+        data.setCode(SUCCESSS_CODE);
+        if (redisTemplate.hasKey(key)){
+            Object obj = redisTemplate.opsForValue().get(key);
+            data.setData(obj);
+        }else {
+            data.setMessage("未查询到参数！");
+            data.setCode(FAIL_CODE);
+        }
+        return data;
+    }
 }
