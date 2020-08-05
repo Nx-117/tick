@@ -45,6 +45,11 @@
             <artifactId>jedis</artifactId>
             <version>LATEST</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-scratchpad</artifactId>
+            <version>4.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
