@@ -1,11 +1,10 @@
 
-###### Tick定时推送
+# Tick定时推送
 
-# 添加/删除定时任务接口
+### 添加/删除定时任务接口
 
 ### 请求地址
-##### Post请求 Json格式传输
-##### http://localhost:7890/tick 
+##### Post请求 Json格式传输 http://localhost:7890/tick 
 
 ### 接口参数
 
